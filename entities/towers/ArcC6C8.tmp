@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://cup1t5ptbe7ef"]
+
+[ext_resource type="Texture2D" uid="uid://dc6pmeut2fsqu" path="res://assets/art/towerDefense_tile180.png" id="1_mb7ij"]
+[ext_resource type="Script" path="res://entities/towers/ArcherT1.gd" id="1_uaaip"]
+[ext_resource type="Texture2D" uid="uid://chjtyowcw84gp" path="res://assets/art/towerDefense_tile249.png" id="2_imoib"]
+
+[node name="ArcherT1" type="Node2D"]
+script = ExtResource("1_uaaip")
+
+[node name="Base" type="Sprite2D" parent="."]
+position = Vector2(0, -1.00002)
+texture = ExtResource("1_mb7ij")
+
+[node name="Archer" type="Sprite2D" parent="."]
+position = Vector2(3.05176e-05, -2)
+texture = ExtResource("2_imoib")
+
+[node name="Marker2D" type="Marker2D" parent="Archer"]
+position = Vector2(0.999969, -32)
